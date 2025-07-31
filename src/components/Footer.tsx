@@ -3,7 +3,7 @@ import { Heart, ArrowUp, Music, Building, Quote } from "lucide-react";
 
 const Footer = () => {
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
@@ -13,53 +13,122 @@ const Footer = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
           <div className="space-y-4">
-            <h3 className="font-serif text-2xl font-bold text-gold">Mike Agar</h3>
+            <h3 className="font-serif text-2xl font-bold text-[#56bcbd]">
+              Mike Agar
+            </h3>
             <p className="text-primary-foreground/80 leading-relaxed">
-              From Dehradun to the world — bridging music, technology, and human connection.
+              From Dehradun to the world — bridging music, technology, and human
+              connection.
             </p>
             <div className="flex gap-2">
               <div className="w-8 h-8 bg-gold/20 rounded-full flex items-center justify-center">
-                <Music className="w-4 h-4 text-gold" />
+                <Music className="w-4 h-4 text-[#56bcbd]" />
               </div>
               <div className="w-8 h-8 bg-gold/20 rounded-full flex items-center justify-center">
-                <Building className="w-4 h-4 text-gold" />
+                <Building className="w-4 h-4 text-[#56bcbd]" />
               </div>
               <div className="w-8 h-8 bg-gold/20 rounded-full flex items-center justify-center">
-                <Quote className="w-4 h-4 text-gold" />
+                <Quote className="w-4 h-4 text-[#56bcbd]" />
               </div>
             </div>
           </div>
 
           {/* Journey */}
           <div className="space-y-4">
-            <h4 className="font-serif text-lg font-semibold text-primary-foreground">The Journey</h4>
+            <h4 className="font-serif text-lg font-semibold text-primary-foreground">
+              The Journey
+            </h4>
             <ul className="space-y-2 text-primary-foreground/70">
-              <li><a href="#journey" className="hover:text-gold transition-colors">Life Timeline</a></li>
-              <li><a href="#music" className="hover:text-gold transition-colors">Musical Legacy</a></li>
-              <li><a href="#business" className="hover:text-gold transition-colors">Business Success</a></li>
-              <li><a href="#" className="hover:text-gold transition-colors">Photo Gallery</a></li>
+              <li>
+                <a
+                  href="#journey"
+                  className="hover:text-[#56bcbd] transition-colors"
+                >
+                  Life Timeline
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#music"
+                  className="hover:text-[#56bcbd] transition-colors"
+                >
+                  Musical Legacy
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#business"
+                  className="hover:text-[#56bcbd] transition-colors"
+                >
+                  Business Success
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-[#56bcbd] transition-colors">
+                  Photo Gallery
+                </a>
+              </li>
             </ul>
           </div>
 
           {/* Business */}
           <div className="space-y-4">
-            <h4 className="font-serif text-lg font-semibold text-primary-foreground">Business</h4>
+            <h4 className="font-serif text-lg font-semibold text-primary-foreground">
+              Business
+            </h4>
             <ul className="space-y-2 text-primary-foreground/70">
-              <li><a href="#" className="hover:text-gold transition-colors">Fast Data Connect</a></li>
-              <li><a href="#" className="hover:text-gold transition-colors">Services</a></li>
-              <li><a href="#" className="hover:text-gold transition-colors">Case Studies</a></li>
-              <li><a href="#" className="hover:text-gold transition-colors">Speaking</a></li>
+              <li>
+                <a href="#" className="hover:text-[#56bcbd] transition-colors">
+                  Fast Data Connect
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-[#56bcbd] transition-colors">
+                  Services
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-[#56bcbd] transition-colors">
+                  Case Studies
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-[#56bcbd] transition-colors">
+                  Speaking
+                </a>
+              </li>
             </ul>
           </div>
 
           {/* Connect */}
           <div className="space-y-4">
-            <h4 className="font-serif text-lg font-semibold text-primary-foreground">Connect</h4>
+            <h4 className="font-serif text-lg font-semibold text-primary-foreground">
+              Connect
+            </h4>
             <ul className="space-y-2 text-primary-foreground/70">
-              <li><a href="#connect" className="hover:text-gold transition-colors">Contact</a></li>
-              <li><a href="#" className="hover:text-gold transition-colors">LinkedIn</a></li>
-              <li><a href="#" className="hover:text-gold transition-colors">YouTube</a></li>
-              <li><a href="#" className="hover:text-gold transition-colors">Press Kit</a></li>
+              <li>
+                <a
+                  href="#connect"
+                  className="hover:text-[#56bcbd] transition-colors"
+                >
+                  Contact
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-[#56bcbd] transition-colors">
+                  LinkedIn
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-[#56bcbd] transition-colors">
+                  YouTube
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-[#56bcbd] transition-colors">
+                  Press Kit
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -72,7 +141,8 @@ const Footer = () => {
                 © 2024 Mike Agar. All rights reserved.
               </p>
               <p className="text-primary-foreground/60 text-sm mt-1">
-                Made with <Heart className="w-4 h-4 inline text-gold" /> to inspire and connect.
+                Made with <Heart className="w-4 h-4 inline text-[#56bcbd]" /> to
+                inspire and connect.
               </p>
             </div>
 
@@ -84,7 +154,7 @@ const Footer = () => {
                 variant="glass"
                 size="sm"
                 onClick={scrollToTop}
-                className="text-primary-foreground hover:text-gold"
+                className="text-primary-foreground hover:text-[#56bcbd]"
               >
                 <ArrowUp className="w-4 h-4" />
                 Back to Top
@@ -96,10 +166,10 @@ const Footer = () => {
         {/* Inspirational Quote */}
         <div className="mt-8 text-center">
           <blockquote className="font-serif text-lg italic text-primary-foreground/80 max-w-2xl mx-auto">
-            "Every ending is a new beginning, every setback a setup for a comeback, 
-            and every dream a blueprint for reality."
+            "Every ending is a new beginning, every setback a setup for a
+            comeback, and every dream a blueprint for reality."
           </blockquote>
-          <p className="text-gold text-sm mt-2">— Mike Agar</p>
+          <p className="text-[#56bcbd] text-sm mt-2">— Mike Agar</p>
         </div>
       </div>
     </footer>
