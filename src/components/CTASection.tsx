@@ -2,15 +2,15 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { 
-  Calendar, 
-  Music, 
-  Download, 
-  Mail, 
-  Phone, 
+import {
+  Calendar,
+  Music,
+  Download,
+  Mail,
+  Phone,
   MessageSquare,
   Linkedin,
-  Youtube
+  Youtube,
 } from "lucide-react";
 
 const CTASection = () => {
@@ -20,10 +20,10 @@ const CTASection = () => {
         <div className="text-center mb-16">
           <h2 className="font-serif text-4xl md:text-5xl font-bold mb-4">
             Let's Create Something
-            <span className="text-gold block">Extraordinary Together</span>
+            <span className="text-[#56bcbd] block">Extraordinary Together</span>
           </h2>
           <p className="text-xl text-primary-foreground/90 max-w-3xl mx-auto">
-            Whether you're looking for business solutions, speaking engagements, 
+            Whether you're looking for business solutions, speaking engagements,
             or simply want to connect over music and innovation.
           </p>
         </div>
@@ -33,15 +33,24 @@ const CTASection = () => {
           <Card className="bg-background/10 backdrop-blur-md border-primary-foreground/20 text-primary-foreground">
             <CardContent className="p-6 text-center">
               <div className="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Calendar className="w-8 h-8 text-gold" />
+                <Calendar className="w-8 h-8 text-[#56bcbd]" />
               </div>
-              <h3 className="font-serif text-xl font-semibold mb-2">Speaking Engagements</h3>
+              <h3 className="font-serif text-xl font-semibold mb-2">
+                Speaking Engagements
+              </h3>
               <p className="text-primary-foreground/80 mb-6">
-                Book Mike for keynotes on entrepreneurship, digital transformation, 
-                and the intersection of creativity and business.
+                Book Mike for keynotes on entrepreneurship, digital
+                transformation, and the intersection of creativity and business.
               </p>
               <Button variant="gold" className="w-full">
-                Book Speaking Event
+                <a
+                  href="mailto:mike.agar@fastdataconnect.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full"
+                >
+                  Book Speaking Event
+                </a>
               </Button>
             </CardContent>
           </Card>
@@ -50,16 +59,24 @@ const CTASection = () => {
           <Card className="bg-background/10 backdrop-blur-md border-primary-foreground/20 text-primary-foreground">
             <CardContent className="p-6 text-center">
               <div className="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <MessageSquare className="w-8 h-8 text-gold" />
+                <MessageSquare className="w-8 h-8 text-[#56bcbd]" />
               </div>
-              <h3 className="font-serif text-xl font-semibold mb-2">Business Consultation</h3>
+              <h3 className="font-serif text-xl font-semibold mb-2">
+                Business Consultation
+              </h3>
               <p className="text-primary-foreground/80 mb-6">
-                Explore how Fast Data Connect can accelerate your digital transformation 
-                with Salesforce and Google Cloud solutions.
+                Explore how Fast Data Connect can accelerate your digital
+                transformation with Salesforce and Google Cloud solutions.
               </p>
-              <Button variant="hero" className="w-full">
-                Schedule Consultation
-              </Button>
+              <a
+                href="https://www.linkedin.com/in/mike-agar"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="gold" className="w-full">
+                  Book Consultation
+                </Button>
+              </a>
             </CardContent>
           </Card>
 
@@ -67,14 +84,19 @@ const CTASection = () => {
           <Card className="bg-background/10 backdrop-blur-md border-primary-foreground/20 text-primary-foreground">
             <CardContent className="p-6 text-center">
               <div className="w-16 h-16 bg-gold/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Music className="w-8 h-8 text-gold" />
+                <Music className="w-8 h-8 text-[#56bcbd]" />
               </div>
-              <h3 className="font-serif text-xl font-semibold mb-2">Music Journey</h3>
+              <h3 className="font-serif text-xl font-semibold mb-2">
+                Music Journey
+              </h3>
               <p className="text-primary-foreground/80 mb-6">
-                Discover Mike's musical legacy and stay updated with his latest 
+                Discover Mike's musical legacy and stay updated with his latest
                 ghazals and spiritual compositions.
               </p>
-              <Button variant="glass" className="w-full text-primary-foreground">
+              <Button
+                variant="glass"
+                className="w-full text-primary-foreground"
+              >
                 <Youtube className="w-4 h-4" />
                 Visit Music Channel
               </Button>
@@ -84,83 +106,47 @@ const CTASection = () => {
 
         {/* Contact Form */}
         <div className="mt-16">
-          <Card className="max-w-4xl mx-auto bg-background/10 backdrop-blur-md border-primary-foreground/20">
-            <CardContent className="p-8">
-              <div className="grid lg:grid-cols-2 gap-8">
-                <div>
-                  <h3 className="font-serif text-2xl font-semibold text-primary-foreground mb-6">
-                    Get In Touch
-                  </h3>
-                  <div className="space-y-4">
-                    <Input 
-                      placeholder="Your Name" 
-                      className="bg-background/20 border-primary-foreground/30 text-primary-foreground placeholder:text-primary-foreground/60"
-                    />
-                    <Input 
-                      placeholder="Your Email" 
-                      type="email"
-                      className="bg-background/20 border-primary-foreground/30 text-primary-foreground placeholder:text-primary-foreground/60"
-                    />
-                    <Input 
-                      placeholder="Subject" 
-                      className="bg-background/20 border-primary-foreground/30 text-primary-foreground placeholder:text-primary-foreground/60"
-                    />
-                    <Textarea 
-                      placeholder="Your Message" 
-                      rows={4}
-                      className="bg-background/20 border-primary-foreground/30 text-primary-foreground placeholder:text-primary-foreground/60"
-                    />
-                    <Button variant="gold" className="w-full">
-                      <Mail className="w-4 h-4" />
-                      Send Message
-                    </Button>
-                  </div>
-                </div>
+          <div className="bg-white dark:bg-gray-900 rounded-lg shadow-md p-6 max-w-md mx-auto">
+            <h4 className="font-serif text-2xl font-semibold text-gray-900 dark:text-white mb-6 border-b pb-2 border-gray-200 dark:border-gray-700">
+              Direct Contact
+            </h4>
+            <div className="space-y-4">
+              {/* Email */}
+              <a
+                href="mailto:mike@fastdataconnect.com"
+                className="flex items-center gap-3 hover:text-[#56bcbd] transition-colors"
+              >
+                <Mail className="w-5 h-5 text-[#56bcbd]" />
+                <span className="text-gray-800 dark:text-gray-200">
+                  mike@fastdataconnect.com
+                </span>
+              </a>
 
-                <div className="space-y-6">
-                  <div>
-                    <h4 className="font-serif text-xl font-semibold text-primary-foreground mb-4">
-                      Direct Contact
-                    </h4>
-                    <div className="space-y-3">
-                      <div className="flex items-center gap-3">
-                        <Mail className="w-5 h-5 text-gold" />
-                        <span className="text-primary-foreground/90">mike@fastdataconnect.com</span>
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <Phone className="w-5 h-5 text-gold" />
-                        <span className="text-primary-foreground/90">+1 (555) 123-4567</span>
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <Linkedin className="w-5 h-5 text-gold" />
-                        <span className="text-primary-foreground/90">linkedin.com/in/mike-agar</span>
-                      </div>
-                    </div>
-                  </div>
+              {/* Phone */}
+              <a
+                href="tel:+15551234567"
+                className="flex items-center gap-3 hover:text-[#56bcbd] transition-colors"
+              >
+                <Phone className="w-5 h-5 text-[#56bcbd]" />
+                <span className="text-gray-800 dark:text-gray-200">
+                  +1 (555) 123-4567
+                </span>
+              </a>
 
-                  <div>
-                    <h4 className="font-serif text-xl font-semibold text-primary-foreground mb-4">
-                      Download Resources
-                    </h4>
-                    <div className="space-y-3">
-                      <Button variant="outline" className="w-full justify-start border-primary-foreground/30 text-primary-foreground hover:bg-background/20">
-                        <Download className="w-4 h-4" />
-                        Executive Biography (PDF)
-                      </Button>
-                      <Button variant="outline" className="w-full justify-start border-primary-foreground/30 text-primary-foreground hover:bg-background/20">
-                        <Download className="w-4 h-4" />
-                        Business Profile (PDF)
-                      </Button>
-                      <Button variant="outline" className="w-full justify-start border-primary-foreground/30 text-primary-foreground hover:bg-background/20">
-                        <Download className="w-4 h-4" />
-                        Media Kit (ZIP)
-                      </Button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
+              {/* LinkedIn */}
+              <a
+                href="https://www.linkedin.com/in/agarmike/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 hover:text-[#56bcbd] transition-colors"
+              >
+                <Linkedin className="w-5 h-5 text-[#56bcbd]" />
+                <span className="text-gray-800 dark:text-gray-200">
+                  linkedin.com/in/mike-agar
+                </span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
