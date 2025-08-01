@@ -93,13 +93,18 @@ const CTASection = () => {
                 Discover Mike's musical legacy and stay updated with his latest
                 ghazals and spiritual compositions.
               </p>
-              <Button
-                variant="glass"
-                className="w-full text-primary-foreground"
+              <a
+                href="https://www.youtube.com/channel/UCLHDDMu7PY6rvQ4H_H0ZWrg"
+                target="_blank"
               >
-                <Youtube className="w-4 h-4" />
-                Visit Music Channel
-              </Button>
+                <Button
+                  variant="glass"
+                  className="w-full text-primary-foreground"
+                >
+                  <Youtube className="w-4 h-4" />
+                  Visit Music Channel
+                </Button>
+              </a>
             </CardContent>
           </Card>
         </div>

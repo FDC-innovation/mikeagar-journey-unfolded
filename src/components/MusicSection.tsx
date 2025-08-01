@@ -110,12 +110,19 @@ const MusicSection = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="gold" className="flex-1">
-                New Releases
-              </Button>
-              <Button variant="outline" className="flex-1">
-                Musical Journey
-              </Button>
+              <a
+                href="https://www.youtube.com/channel/UCLHDDMu7PY6rvQ4H_H0ZWrg"
+                target="_blank"
+              >
+                <Button variant="gold" className="flex-1">
+                  New Releases
+                </Button>
+              </a>
+              <a href="https://www.youtube.com/channel/UCLHDDMu7PY6rvQ4H_H0ZWrg">
+                <Button variant="outline" className="flex-1">
+                  Musical Journey
+                </Button>
+              </a>
             </div>
           </div>
         </div>

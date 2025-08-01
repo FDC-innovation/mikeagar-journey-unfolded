@@ -170,8 +170,21 @@ const BusinessSection = () => {
               </div>
             </div>
             <div className="flex flex-col sm:flex-row gap-3">
-              <Button variant="hero">Schedule Consultation</Button>
-              <Button variant="outline">View Case Studies</Button>
+              <a
+                href="https://fastdataconnect.com/contact-us"
+                target="_blank"
+                className="w-full"
+              >
+                <Button variant="hero">Schedule Consultation</Button>
+              </a>
+
+              <a
+                href="https://fastdataconnect.com/service/google-cloud-service"
+                target="_blank"
+                className="w-full"
+              >
+                <Button variant="outline">View Services</Button>
+              </a>
             </div>
           </Card>
         </div>
